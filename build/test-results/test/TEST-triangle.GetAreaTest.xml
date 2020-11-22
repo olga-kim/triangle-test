@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="triangle.GetAreaTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-22T19:14:18" hostname="MacBook-Air-Olga.local" time="2.559">
+  <properties/>
+  <testcase name="getArea[0](AddTriangleRequest(separator=;, input=3;4;5), 6.0)" classname="triangle.GetAreaTest" time="1.941"/>
+  <testcase name="getArea[1](AddTriangleRequest(separator=;, input=9;9;9), 35.074028853269766)" classname="triangle.GetAreaTest" time="0.399"/>
+  <testcase name="getAreaForNonexistentTriangle" classname="triangle.GetAreaTest" time="0.212"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

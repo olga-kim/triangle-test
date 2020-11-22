@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+ext{
+    testngVersion = '7.3.0'
+    retrofitVersion = '2.9.0'
+    lombokVersion = '1.18.16'
+}
+
+group 'org.triangle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-jackson:$retrofitVersion"
+
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+    testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+    compile "org.apache.commons:commons-lang3:3.11"
+
+
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+    testCompile "ch.qos.logback:logback-classic:0.9.26"
+    testCompile "org.testng:testng:$testngVersion"
+    testCompile "org.assertj:assertj-core:3.18.1"
+
+}
+
+test {
+    useTestNG()
+}
