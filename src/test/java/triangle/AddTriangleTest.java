@@ -73,4 +73,7 @@ public class AddTriangleTest extends BaseTest {
         assertThat(response.right)
                 .contains("\"exception\":\"com.natera.test.triangle.exception.LimitExceededException\",\"message\":\"Limit exceeded\",\"path\":\"/triangle\"");
     }
+    
+    public void emptyTest(){
+    }
 }
